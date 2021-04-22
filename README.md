@@ -27,3 +27,4 @@ Daha sonra Y kullanıcısıda aynı istasyonda (Rusya-Moskova(örnek)) KİRALA b
 X kullanıcısı sayfayı açtı ama henüz ödeme gerçekleştirmeden Y kullanıcısı ödeme yaparsa kuyrukta ikinci sırada olduğundan ve istasyonda 1 bisiklet 
 olduğundan bisikleti kiralayamayacaktır.
 5-Kullanıcı bisikleti boş yer bulunan bir istasyona teslim edebilir ve +5 puan kazanır. 50 puan ödemesiyle bisiklet kiralayabilmektedir.
+6-Proje ilk kez çalıştırıldığında api uç noktasından datalar çekilerek veritabanına kayıt edilmektedir.Program.cs içindeki ExternalData sınıfında bu işlem yapılmaktadır.
