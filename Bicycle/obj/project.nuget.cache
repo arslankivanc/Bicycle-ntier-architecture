@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9COEcwYKnCCh6zmASjjMtYmceklxX8CCV2Vw7KgmKYNlsjYdvwkY22eP3CO3s05CyxQWNrpvFgnKeHnu8T/XPw==",
+  "dgSpecHash": "Pcx/s3N0SbhGFOdVw34szhpmZjU5lAHrrmMvXq4MpbOjcbKuZe/AbiVKufoLPVm1CksMFrXBIWT+pR4kY0rqSA==",
   "success": true,
-  "projectFilePath": "C:\\Spidya\\Bicycle\\Bicycle\\Bicycle.csproj",
+  "projectFilePath": "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle\\Bicycle.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ts_ki\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\ts_ki\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

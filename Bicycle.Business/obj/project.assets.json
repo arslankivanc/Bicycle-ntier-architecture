@@ -7503,11 +7503,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Spidya\\Bicycle\\Bicycle.Business\\Bicycle.Business.csproj",
+      "projectUniqueName": "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.Business\\Bicycle.Business.csproj",
       "projectName": "Bicycle.Business",
-      "projectPath": "C:\\Spidya\\Bicycle\\Bicycle.Business\\Bicycle.Business.csproj",
+      "projectPath": "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.Business\\Bicycle.Business.csproj",
       "packagesPath": "C:\\Users\\ts_ki\\.nuget\\packages\\",
-      "outputPath": "C:\\Spidya\\Bicycle\\Bicycle.Business\\obj\\",
+      "outputPath": "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -7529,11 +7529,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Spidya\\Bicycle\\Bicycle.DataAccess\\Bicycle.DataAccess.csproj": {
-              "projectPath": "C:\\Spidya\\Bicycle\\Bicycle.DataAccess\\Bicycle.DataAccess.csproj"
+            "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.DataAccess\\Bicycle.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.DataAccess\\Bicycle.DataAccess.csproj"
             },
-            "C:\\Spidya\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj": {
-              "projectPath": "C:\\Spidya\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj"
+            "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj": {
+              "projectPath": "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj"
             }
           }
         }

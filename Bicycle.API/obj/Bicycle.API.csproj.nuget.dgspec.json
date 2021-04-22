@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Spidya\\Bicycle\\Bicycle.API\\Bicycle.API.csproj": {}
+    "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.API\\Bicycle.API.csproj": {}
   },
   "projects": {
-    "C:\\Spidya\\Bicycle\\Bicycle.API\\Bicycle.API.csproj": {
+    "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.API\\Bicycle.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Spidya\\Bicycle\\Bicycle.API\\Bicycle.API.csproj",
+        "projectUniqueName": "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.API\\Bicycle.API.csproj",
         "projectName": "Bicycle.API",
-        "projectPath": "C:\\Spidya\\Bicycle\\Bicycle.API\\Bicycle.API.csproj",
+        "projectPath": "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.API\\Bicycle.API.csproj",
         "packagesPath": "C:\\Users\\ts_ki\\.nuget\\packages\\",
-        "outputPath": "C:\\Spidya\\Bicycle\\Bicycle.API\\obj\\",
+        "outputPath": "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -33,8 +33,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Spidya\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj": {
-                "projectPath": "C:\\Spidya\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj"
+              "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj": {
+                "projectPath": "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "C:\\Spidya\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj": {
+    "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Spidya\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj",
         "projectName": "Bicycle.Entities",
-        "projectPath": "C:\\Spidya\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj",
+        "projectPath": "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.Entities\\Bicycle.Entities.csproj",
         "packagesPath": "C:\\Users\\ts_ki\\.nuget\\packages\\",
-        "outputPath": "C:\\Spidya\\Bicycle\\Bicycle.Entities\\obj\\",
+        "outputPath": "C:\\Users\\ts_ki\\OneDrive\\Masaüstü\\Bicycle\\Bicycle.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

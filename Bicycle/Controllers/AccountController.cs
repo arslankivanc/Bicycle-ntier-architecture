@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace Bicycle.Controllers
 {
+    [AllowAnonymous]
     public class AccountController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
@@ -24,7 +25,6 @@ namespace Bicycle.Controllers
             _logger = logger;
         }
         [HttpGet]
-        [AllowAnonymous]
         public IActionResult Login(string returnUrl)
         {
             _logger.LogInformation(string.Format("ziyaretçi giriş yapıyor..."));
@@ -33,7 +33,6 @@ namespace Bicycle.Controllers
             return View(model);
         }
         [HttpPost]
-        [AllowAnonymous]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (ModelState.IsValid)
@@ -52,7 +51,6 @@ namespace Bicycle.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
         public IActionResult Register()
         {
             var model = new RegisterViewModel();
@@ -60,7 +58,6 @@ namespace Bicycle.Controllers
         }
 
         [HttpPost]
-        [AllowAnonymous]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
@@ -94,7 +91,6 @@ namespace Bicycle.Controllers
         }
 
         [HttpPost]
-        [AllowAnonymous]
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();

@@ -65,6 +65,7 @@ namespace Bicycle.Controllers
             return View(stations);
         }
         [HttpGet]
+        [Authorize]
         public IActionResult Station(int id)
         {
             _logger.LogInformation("istasyon sayfası için istekte bulunuldu.");
@@ -95,6 +96,7 @@ namespace Bicycle.Controllers
             _logger.LogInformation(string.Format("istasyon sayfası sorunsuz bir şekilde açıldı"));
             return View(station);
         }
+        [Authorize]
         public string[] PaymentMethodCard(int id, string username)
         {
             _logger.LogInformation(string.Format("{0} kullanıcısı kredi kartı ile ödemi işlemi gerçekleştiriyor...", username));
@@ -164,6 +166,7 @@ namespace Bicycle.Controllers
                 return messaje;
             }
         }
+        [Authorize]
         public string[] PaymentMethodPoint(int id, string username)
         {
             _logger.LogInformation(string.Format("{0} kullanıcısı kredi kartı ile ödemi işlemi gerçekleştiriyor...", username));
@@ -246,6 +249,7 @@ namespace Bicycle.Controllers
             }
         }
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Delivery(int id)
         {
             _logger.LogInformation(string.Format("Bisiklet teslim sayfası açılıyor..."));
@@ -261,6 +265,7 @@ namespace Bicycle.Controllers
             return View(data);
         }
         [HttpGet]
+        [Authorize]
         public bool DeliveryConfirm(int sid,int rentid)
         {
             _logger.LogInformation(string.Format("{0} kullanıcısı bisiklet teslim ediyor...",User.Identity.Name));
@@ -290,6 +295,7 @@ namespace Bicycle.Controllers
             return View();
         }
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Rentbicycle()
         {
             _logger.LogInformation(string.Format("{0} kullanıcısı bisikletlerim sayfasına erişiyor...", User.Identity.Name));
