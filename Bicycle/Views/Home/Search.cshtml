@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Station>
+<style>
+    .center {
+        text-align: center;
+    }
+
+    .pagination a {
+        color: black;
+        font-family: Calibri;
+        float: left;
+        padding: 4px 8px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+    }
+
+    .pagination li.active {
+        background-color: #343a40;
+        border: 1px solid #ddd;
+        padding: 4px 8px;
+        color: white;
+        border: 1px solid #4CAF50;
+    }
+
+    .pagination li:hover:not(.active) {
+        background-color: #ddd;
+    }
+</style>
+<div class="col-sm-3">
+    <form method="get" asp-controller="Home" asp-action="Search">
+        <input id="countryCity" class="form-control mr-sm-2" name="search" type="text" placeholder="Ülke veya şehir ara">
+        <button type="submit" class="btn btn-dark mt-1 ml-1">Search</button>
+        <a class="btn btn-warning mt-1 ml-2 text-white" asp-controller="Home" asp-action="Index">Bütün Listeyi Getir</a>
+    </form>
+</div>
+<div class="col-sm-9">
+    <div class="row">
+        @foreach (var station in Model)
+        {
+            <div class="col-sm-3">
+                <div class="card card-cascade card-ecommerce wider shadow mb-5 ">
+                    <!--Card image-->
+                    <div class="view view-cascade overlay text-center">
+                        <img class="card-img-top" src="~/img/png7-300x300.png" alt=""> <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!--Card Body-->
+                    <div class="card-body card-body-cascade text-center">
+                        <!--Card Title-->
+                        <h5 class="card-title">
+                            <a href="">
+                                @if (station.Network != null && station.Network.Location != null)
+                                {@station.Network.Location.Country}
+                            </a>
+                        </h5> <!-- Card Description-->
+                        <p class="card-text">
+                            <ul class="list-group">
+                                <li class="list-inline-item text-uppercase">
+                                    <strong>
+                                        @if (station.Network != null && station.Network.Location != null)
+                                        {@station.Network.Location.City}
+                                    </strong>
+                                </li>
+                                <li class="list-inline-item text-center">
+                                    <strong>Bisiklet:</strong>  @station.FreeBikes
+                                </li>
+                                <li class="list-inline-item text-center">
+                                    <strong>Boş yer:</strong> @station.EmptySlots
+                                </li>
+                            </ul>
+                        <p class="price text-center">Fiyat:50₺</p> <!-- Card Rating-->
+                        <!--Card footer-->
+                        <a class="btn btn-dark btn-sm" style="height:35px;width:100%;" asp-controller="Home" asp-action="Station" asp-route-id="@station.Id"><strong>Kirala</strong></a>
+                        <a class="btn btn-warning btn-sm mt-1" style="height:35px;width:100%;" asp-controller="Home" asp-action="Delivery" asp-route-id="@station.Id"><strong>Teslim Et</strong></a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

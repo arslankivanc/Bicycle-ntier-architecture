@@ -1,0 +1,81 @@
+﻿@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Mvc.Bootstrap4;
+@model IPagedList<Station>
+<style>
+    .center {
+        text-align: center;
+    }
+
+    .pagination a {
+        color: black;
+        font-family: Calibri;
+        float: left;
+        padding: 4px 8px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+    }
+
+    .pagination li.active {
+        background-color: #343a40;
+        border: 1px solid #ddd;
+        padding: 4px 8px;
+        color: white;
+        border: 1px solid #4CAF50;
+    }
+
+    .pagination li:hover:not(.active) {
+        background-color: #ddd;
+    }
+</style>
+<div class="row">
+    @foreach (var station in Model)
+    {
+        <div class="col-sm-3 mt-2" style="display:flex;flex-wrap:wrap">
+            <div class="card card-cascade card-ecommerce wider shadow">
+                <!--Card image-->
+                <div class="view view-cascade overlay text-center">
+                    <img class="card-img-top" src="~/img/png7-300x300.png" alt=""> <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                <!--Card Body-->
+                <div class="card-body card-body-cascade text-center">
+                    <!--Card Title-->
+                    <h5 class="card-title">
+                        <a href="">
+                            @if (station.Network != null && station.Network.Location != null)
+                            {@station.Network.Location.Country}
+                        </a>
+                    </h5> <!-- Card Description-->
+                    <p class="card-text">
+                        <ul class="list-group">
+                            <li class="list-inline-item text-uppercase">
+                                <strong>
+                                    @if (station.Network != null && station.Network.Location != null)
+                                    {@station.Network.Location.City}
+                                </strong>
+                            </li>
+                            <li class="list-inline-item text-center">
+                                <strong>Bisiklet:</strong>  @station.FreeBikes
+                            </li>
+                            <li class="list-inline-item text-center">
+                                <strong>Boş yer:</strong> @station.EmptySlots
+                            </li>
+                        </ul>
+                    <p class="price text-center">Fiyat:50₺</p> <!-- Card Rating-->
+                    <!--Card footer-->
+                    <a class="btn btn-dark btn-sm" style="height:35px;width:100%;" asp-controller="Home" asp-action="Station" asp-route-id="@station.Id"><strong>Kirala</strong></a>
+                    <a class="btn btn-warning btn-sm mt-1 mb-0" style="height:35px;width:100%;" asp-controller="Home" asp-action="Delivery" asp-route-id="@station.Id"><strong>Teslim Et</strong></a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<div class="row mt-2">
+    <div class="col-sm-12">
+        @Html.PagedListPager(Model, _sayfaNo => Url.Action("Index", "Home", new { SayfaNo = _sayfaNo }), new X.PagedList.Web.Common.PagedListRenderOptionsBase { LinkToFirstPageFormat = "<< İlk", LinkToPreviousPageFormat = "< Önceki", LinkToNextPageFormat = "Sonraki >", LinkToLastPageFormat = "Son >>" })
+    </div>
+</div>

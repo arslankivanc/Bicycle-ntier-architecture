@@ -1,0 +1,23 @@
+﻿@model IEnumerable<RentBicycle>
+    @foreach (var bike in Model)
+    {
+        <div class="col-sm-3 mt-2">
+            <div class="card">
+                <img class="card-img-top" src="~/img/png7-300x300.png" style="height:30%" alt="Card image cap">
+                <ul class="list-group list-group-flush">
+                    @if (bike.RentIsActive)
+                    {
+                    <li class="list-group-item">
+                        <strong>Kullanım Durumu:</strong><span class="text-success">Kullanılıyor</span>
+                    </li>
+                    }
+                    else {
+                    <li class="list-group-item">
+                        <strong>Kullanım Durumu:</strong><span class="text-warning">Teslim Edildi.</span>
+                    </li> }
+                    <li class="list-group-item"><strong>Kiralama Tarihi:</strong><span class="text-info">@bike.CreatedOn.ToShortDateString()</span></li>
+                    <li class="list-group-item"><strong>Kiralanan İstasyon:</strong><span class="text-info">@bike.Station.Name</span></li>
+                </ul>
+            </div>
+        </div>
+    }

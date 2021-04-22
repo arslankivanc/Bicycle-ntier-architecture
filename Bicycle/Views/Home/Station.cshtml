@@ -1,0 +1,123 @@
+﻿@model Station
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Kiralama İşlemi</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4 class="bodyMessaje"><i class="fa fa-check alert-success"></i></h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-warning" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="col-sm-3">
+        <div class="card card-cascade card-ecommerce wider shadow mb-5 ">
+            <!--Card image-->
+            <div class="view view-cascade overlay text-center">
+                <img class="card-img-top" src="~/img/png7-300x300.png" alt=""> <a>
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+            <!--Card Body-->
+            <div class="card-body card-body-cascade text-center">
+                <!--Card Title-->
+                <h5 class="card-title">
+                    <a href="">
+                        @if (Model.Network != null && Model.Network.Location != null)
+                        {@Model.Network.Location.Country}
+                    </a>
+                </h5> <!-- Card Description-->
+                <p class="card-text">
+                    <ul class="list-group">
+                        <li class="list-inline-item text-uppercase">
+                            <strong>
+                                @if (Model.Network != null && Model.Network.Location != null)
+                                {@Model.Network.Location.City}
+                            </strong>
+                        </li>
+                        <li class="list-inline-item text-center">
+                            <strong>Bisiklet:</strong> <span id="freeBike" data-freeQuantity="@Model.FreeBikes">@Model.FreeBikes</span>  
+                        </li>
+                        <li class="list-inline-item text-center">
+                            <strong>Boş yer:</strong><span id="emptySlot" data-emptyQuantity="@Model.EmptySlots">@Model.EmptySlots</span> 
+                        </li>
+                    </ul>
+                <p class="price text-center">Fiyat:50₺</p> <!-- Card Rating-->
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 mt-3">
+        <strong>Ödeme yöntemiyle işleminizi devam ediniz.</strong>
+        <!--Card footer-->
+        @{ var userPoint = @ViewBag.userPoint;}
+        <a name="@User.Identity.Name" class="btn btn-dark bbtn-sm mt-3 text-white customlink" id="paymentCreditCard" style="height:35px;width:100%;"><strong>Kredi Kartıyla Öde</strong></a>
+        <a name="@User.Identity.Name" class="btn btn-warning btn-sm mt-3 text-white customlink" id="paymentWithPoints" style="height:35px;width:100%;"><strong>Kazanılmış Puanla Öde(Total:<span class="userPoint">@userPoint</span>)</strong></a>
+        <p><strong>50 puan karşılığında ödeme yapabilirsiniz</strong></p>
+    </div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#paymentCreditCard").click(function myfunction() {
+            var user = $(this).attr("name");
+            var freeQuantity = parseInt($("#freeBike").html());
+            var emptyQuantity = parseInt($("#emptySlot").html());
+            $.ajax({
+                type: "GET",
+                url: "/Home/PaymentMethodCard",
+                data: { id: @Model.Id, username: user },
+                success: function myfunction(data) {
+                    $(".bodyMessaje").html('');
+                    $(".bodyMessaje").html(data[0]);
+
+                    if (data[1]=="true") {
+                        $("#freeBike").html('');
+                        $("#freeBike").html(parseInt(freeQuantity - 1));
+                        $("#emptySlot").html('');
+                        $("#emptySlot").html(parseInt(emptyQuantity + 1));
+                    }
+
+                    $("#myModal").modal('show');
+                    setTimeout(function () { $('#myModal').modal('hide'); }, 6000);
+                },
+                error: function myfunction() {
+                    alert("Beklenmedik bir hata oluştu.Biraz sonra tekrar deneyin");
+                }
+            });
+        });
+
+        $("#paymentWithPoints").click(function myfunction() {
+            var user = $(this).attr("name");
+            var userPoint = parseInt($(".userPoint").html());
+            var freeQuantity = parseInt($("#freeBike").html());
+            var emptyQuantity = parseInt($("#emptySlot").html());
+            $.ajax({
+                type: "GET",
+                url: "/Home/PaymentMethodPoint",
+                data: { id: @Model.Id, username: user },
+                success: function myfunction(data) {
+                    $(".bodyMessaje").html('');
+                    $(".bodyMessaje").html(data[0]);
+
+                    if (data[1]=="true") {
+                        $(".userPoint").html('');
+                        $(".userPoint").html(parseInt(userPoint - 50));
+                        $("#freeBike").html('');
+                        $("#freeBike").html(parseInt(freeQuantity - 1));
+                        $("#emptySlot").html('');
+                        $("#emptySlot").html(parseInt(emptyQuantity + 1));
+                    }
+                    $("#myModal").modal('show');
+                    setTimeout(function () { $('#myModal').modal('hide'); }, 6000);
+                },
+                error: function myfunction() {
+                    alert("Beklenmedik bir hata oluştu.Biraz sonra tekrar deneyin");
+                }
+            });
+        });
+    });
+</script>

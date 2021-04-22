@@ -1,0 +1,16 @@
+C:\Spidya\Bicycle\Bicycle.Business\bin\Debug\netcoreapp3.1\Bicycle.Business.deps.json
+C:\Spidya\Bicycle\Bicycle.Business\bin\Debug\netcoreapp3.1\Bicycle.Business.dll
+C:\Spidya\Bicycle\Bicycle.Business\bin\Debug\netcoreapp3.1\Bicycle.Business.pdb
+C:\Spidya\Bicycle\Bicycle.Business\bin\Debug\netcoreapp3.1\Bicycle.API.dll
+C:\Spidya\Bicycle\Bicycle.Business\bin\Debug\netcoreapp3.1\Bicycle.DataAccess.dll
+C:\Spidya\Bicycle\Bicycle.Business\bin\Debug\netcoreapp3.1\Bicycle.Entities.dll
+C:\Spidya\Bicycle\Bicycle.Business\bin\Debug\netcoreapp3.1\Bicycle.DataAccess.pdb
+C:\Spidya\Bicycle\Bicycle.Business\bin\Debug\netcoreapp3.1\Bicycle.Entities.pdb
+C:\Spidya\Bicycle\Bicycle.Business\bin\Debug\netcoreapp3.1\Bicycle.API.pdb
+C:\Spidya\Bicycle\Bicycle.Business\obj\Debug\netcoreapp3.1\Bicycle.Business.csprojAssemblyReference.cache
+C:\Spidya\Bicycle\Bicycle.Business\obj\Debug\netcoreapp3.1\Bicycle.Business.AssemblyInfoInputs.cache
+C:\Spidya\Bicycle\Bicycle.Business\obj\Debug\netcoreapp3.1\Bicycle.Business.AssemblyInfo.cs
+C:\Spidya\Bicycle\Bicycle.Business\obj\Debug\netcoreapp3.1\Bicycle.Business.csproj.CoreCompileInputs.cache
+C:\Spidya\Bicycle\Bicycle.Business\obj\Debug\netcoreapp3.1\Bicycle.Business.csproj.CopyComplete
+C:\Spidya\Bicycle\Bicycle.Business\obj\Debug\netcoreapp3.1\Bicycle.Business.dll
+C:\Spidya\Bicycle\Bicycle.Business\obj\Debug\netcoreapp3.1\Bicycle.Business.pdb

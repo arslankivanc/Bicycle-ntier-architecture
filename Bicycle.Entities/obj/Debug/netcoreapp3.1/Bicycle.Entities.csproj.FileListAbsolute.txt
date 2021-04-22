@@ -1,0 +1,8 @@
+C:\Spidya\Bicycle\Bicycle.Entities\bin\Debug\netcoreapp3.1\Bicycle.Entities.deps.json
+C:\Spidya\Bicycle\Bicycle.Entities\bin\Debug\netcoreapp3.1\Bicycle.Entities.dll
+C:\Spidya\Bicycle\Bicycle.Entities\bin\Debug\netcoreapp3.1\Bicycle.Entities.pdb
+C:\Spidya\Bicycle\Bicycle.Entities\obj\Debug\netcoreapp3.1\Bicycle.Entities.AssemblyInfoInputs.cache
+C:\Spidya\Bicycle\Bicycle.Entities\obj\Debug\netcoreapp3.1\Bicycle.Entities.AssemblyInfo.cs
+C:\Spidya\Bicycle\Bicycle.Entities\obj\Debug\netcoreapp3.1\Bicycle.Entities.csproj.CoreCompileInputs.cache
+C:\Spidya\Bicycle\Bicycle.Entities\obj\Debug\netcoreapp3.1\Bicycle.Entities.dll
+C:\Spidya\Bicycle\Bicycle.Entities\obj\Debug\netcoreapp3.1\Bicycle.Entities.pdb

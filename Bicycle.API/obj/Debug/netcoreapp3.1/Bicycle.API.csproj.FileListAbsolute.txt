@@ -1,0 +1,12 @@
+C:\Spidya\Bicycle\Bicycle.API\bin\Debug\netcoreapp3.1\Bicycle.API.deps.json
+C:\Spidya\Bicycle\Bicycle.API\bin\Debug\netcoreapp3.1\Bicycle.API.dll
+C:\Spidya\Bicycle\Bicycle.API\bin\Debug\netcoreapp3.1\Bicycle.API.pdb
+C:\Spidya\Bicycle\Bicycle.API\bin\Debug\netcoreapp3.1\Bicycle.Entities.dll
+C:\Spidya\Bicycle\Bicycle.API\bin\Debug\netcoreapp3.1\Bicycle.Entities.pdb
+C:\Spidya\Bicycle\Bicycle.API\obj\Debug\netcoreapp3.1\Bicycle.API.csprojAssemblyReference.cache
+C:\Spidya\Bicycle\Bicycle.API\obj\Debug\netcoreapp3.1\Bicycle.API.AssemblyInfoInputs.cache
+C:\Spidya\Bicycle\Bicycle.API\obj\Debug\netcoreapp3.1\Bicycle.API.AssemblyInfo.cs
+C:\Spidya\Bicycle\Bicycle.API\obj\Debug\netcoreapp3.1\Bicycle.API.csproj.CoreCompileInputs.cache
+C:\Spidya\Bicycle\Bicycle.API\obj\Debug\netcoreapp3.1\Bicycle.API.csproj.CopyComplete
+C:\Spidya\Bicycle\Bicycle.API\obj\Debug\netcoreapp3.1\Bicycle.API.dll
+C:\Spidya\Bicycle\Bicycle.API\obj\Debug\netcoreapp3.1\Bicycle.API.pdb

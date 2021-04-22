@@ -1,0 +1,17 @@
+C:\Spidya\Bicycle\Bicycle.DataAccess\bin\Debug\netcoreapp3.1\Bicycle.DataAccess.deps.json
+C:\Spidya\Bicycle\Bicycle.DataAccess\bin\Debug\netcoreapp3.1\Bicycle.DataAccess.runtimeconfig.json
+C:\Spidya\Bicycle\Bicycle.DataAccess\bin\Debug\netcoreapp3.1\Bicycle.DataAccess.runtimeconfig.dev.json
+C:\Spidya\Bicycle\Bicycle.DataAccess\bin\Debug\netcoreapp3.1\Bicycle.DataAccess.dll
+C:\Spidya\Bicycle\Bicycle.DataAccess\bin\Debug\netcoreapp3.1\Bicycle.DataAccess.pdb
+C:\Spidya\Bicycle\Bicycle.DataAccess\bin\Debug\netcoreapp3.1\Bicycle.API.dll
+C:\Spidya\Bicycle\Bicycle.DataAccess\bin\Debug\netcoreapp3.1\Bicycle.Entities.dll
+C:\Spidya\Bicycle\Bicycle.DataAccess\bin\Debug\netcoreapp3.1\Bicycle.API.pdb
+C:\Spidya\Bicycle\Bicycle.DataAccess\bin\Debug\netcoreapp3.1\Bicycle.Entities.pdb
+C:\Spidya\Bicycle\Bicycle.DataAccess\obj\Debug\netcoreapp3.1\Bicycle.DataAccess.csprojAssemblyReference.cache
+C:\Spidya\Bicycle\Bicycle.DataAccess\obj\Debug\netcoreapp3.1\Bicycle.DataAccess.AssemblyInfoInputs.cache
+C:\Spidya\Bicycle\Bicycle.DataAccess\obj\Debug\netcoreapp3.1\Bicycle.DataAccess.AssemblyInfo.cs
+C:\Spidya\Bicycle\Bicycle.DataAccess\obj\Debug\netcoreapp3.1\Bicycle.DataAccess.csproj.CoreCompileInputs.cache
+C:\Spidya\Bicycle\Bicycle.DataAccess\obj\Debug\netcoreapp3.1\Bicycle.DataAccess.csproj.CopyComplete
+C:\Spidya\Bicycle\Bicycle.DataAccess\obj\Debug\netcoreapp3.1\Bicycle.DataAccess.dll
+C:\Spidya\Bicycle\Bicycle.DataAccess\obj\Debug\netcoreapp3.1\Bicycle.DataAccess.pdb
+C:\Spidya\Bicycle\Bicycle.DataAccess\obj\Debug\netcoreapp3.1\Bicycle.DataAccess.genruntimeconfig.cache

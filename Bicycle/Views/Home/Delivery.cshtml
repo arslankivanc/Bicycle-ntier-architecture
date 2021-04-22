@@ -1,0 +1,77 @@
+﻿@model IEnumerable<RentBicycle>
+@{ 
+    var station = ViewBag.Station;
+}
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Teslim Etme</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4 class="bodyMessaje"><i class="fa fa-check alert-success"></i></h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-warning" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-sm-12">
+    <div class="row ml-1">
+        <ul class="list-group">
+            <li class="list-group-item">Teslim etmek istediğiniz bisikletleri onaylayın</li>
+            <li class="list-group-item"><strong>Ağ:</strong><span class="text-black-50">@station.Network.Name</span> </li>
+            <li class="list-group-item"><strong>İstasyon:</strong><span class="text-black-50">@station.Name</span></li>
+            <li class="list-group-item"><strong>Serbest Bisiklet:</strong><span class="text-black-50 FreeBikes">@station.FreeBikes</span></li>
+            <li class="list-group-item"><strong>Boş Yer:</strong><span class="text-black-50 EmptySlots">@station.EmptySlots</span></li>
+        </ul>
+    </div>
+    <div class="row">
+        <input type="hidden" class="stationid" name="@ViewBag.Station.Id" />
+        @foreach (var bike in Model)
+        {
+            <div class="col-sm-3 mt-1">
+                <div class="card">
+                    <img class="card-img-top" src="~/img/png7-300x300.png" style="height:30%" alt="Card image cap">
+                    <a class="btn btn-warning btn-sm mt-1 delivery customlink" name="@bike.Id"><strong>Teslim Et</strong></a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    $(".delivery").click(function myfunction() {
+        var sid = $(".stationid").attr("name");
+        var rentid = $(this).attr("name");
+        var selectedObject = $(this);
+        var FreeBikes = parseInt($(".FreeBikes").html());
+        var EmptySlots = parseInt($(".EmptySlots").html());
+        $.ajax({
+            type: "GET",
+            url: "/Home/DeliveryConfirm",
+            data: { sid: sid, rentid: rentid },
+            success: function myfunction(data) {
+                if (!data) {
+                    $(".bodyMessaje").html('');
+                    $(".bodyMessaje").html("Boş yer yok ya da geçersiz işlem");
+                } else {
+                    $(".bodyMessaje").html('');
+                    $(".bodyMessaje").html("Bisiklet teslim edildi.");
+                    $(".FreeBikes").html('');
+                    $(".FreeBikes").html(parseInt(FreeBikes + 1));
+                    $(".EmptySlots").html('');
+                    $(".EmptySlots").html(parseInt(EmptySlots - 1));
+                    selectedObject.parent().parent().remove();
+                }
+                $("#myModal").modal('show');
+                setTimeout(function () { $('#myModal').modal('hide'); }, 6000);
+            },
+            error: function myfunction() {
+                alert("Beklenmedik bir hata oluştu.Biraz sonra tekrar deneyin");
+            }
+        });
+    });
+</script>

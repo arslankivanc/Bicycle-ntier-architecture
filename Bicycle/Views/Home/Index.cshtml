@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="col-sm-3">
+    <form method="get" asp-controller="Home" asp-action="Search">
+        <input id="countryCity" class="form-control mr-sm-2" name="search" type="text" placeholder="Ülke veya şehir ara">
+        <button type="submit" class="btn btn-dark mt-1">Search</button>
+    </form>
+</div>
+<div class="col-sm-9">
+    @await Html.PartialAsync("~/Views/Shared/_BicycleListPartialView.cshtml")
+</div>
