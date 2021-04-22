@@ -17,7 +17,7 @@ Bicycle web app - aspnetcore mvc
 
 -Projenin İçeriği-
 1-Proje bisiklet kiralama uygulamasını içermektedir.
-2-Aspnercore mvc-ntier architecture-OOP-Repository Pattern-Automapper-Identity-entityframewrok-pagedlist-ajax-bootstrap-jquery kullanıldı.
+2-Aspnercore mvc-Ntier architecture-OOP-Repository Pattern-Automapper-Identity-Entityframewrokcore-Pagedlist-Ajax-Bootstrap-Jquery kullanıldı.
 3-Bisiklet kiralama, teslim etme , kiraladığı ve teslim ettiği bisiklet geçmişi, race condition durumu, kredi kartı veya puan ile ödeme(sanal pos yoktur.method içinde),
 bisikleti teslim eden kullanıcı için ek puan,client side ve server side validation mevcuttur.
 4-Race condition kullanım durumu şöyledir. 2 farklı kullanıcı olsun(X ve Y).Rusya-Moskova(örnek) istasyonunda 1 bisiklet kaldığını düşünelim.
