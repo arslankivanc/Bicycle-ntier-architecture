@@ -28,3 +28,4 @@ X kullanıcısı sayfayı açtı ama henüz ödeme gerçekleştirmeden Y kullan�
 olduğundan bisikleti kiralayamayacaktır.
 5-Kullanıcı bisikleti boş yer bulunan bir istasyona teslim edebilir ve +5 puan kazanır. 50 puan ödemesiyle bisiklet kiralayabilmektedir.
 6-Proje ilk kez çalıştırıldığında api uç noktasından datalar çekilerek veritabanına kayıt edilmektedir.Program.cs içindeki ExternalData sınıfında bu işlem yapılmaktadır.
+Eğer aynı verilerin tekrar yüklenmesini istemiyorsanız projeyi bir kez çalıştırdıktan sonra veriler çekilecek.Program.cs içerisinde ExternalData metodu yorum satırına alabilirsiniz. 
