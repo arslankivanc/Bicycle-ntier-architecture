@@ -6,7 +6,7 @@ Bicycle web app - aspnetcore mvc
 -Bilgi-
 1-Proje visual studio 2019 ile geliştirildi.Projeyi çalıştırmak için visual studio 2019 gerekli.(2017 içi yama varsa çalıştırılabilir.)
 2-Sql Server 2017 kullanıldı.Eski sürümler desteklenir.  
-3-Proje Aspnetcore Mvc'de(.netcore 5.0) codefirst ile geliştirildi.
+3-Proje Aspnetcore Mvc'de(.net 5.0) codefirst ile geliştirildi.
 
 -Kuruluş-
 1-Proje bilgisayarınıza indirdikten sonra visual studio açılır.
