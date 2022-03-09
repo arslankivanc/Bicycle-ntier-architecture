@@ -14,7 +14,7 @@ namespace Bicycle.Business.Repositories.Concrete
     public class BaseService<T> :IDisposable, IBaseService<T> where T : class
     {
         private readonly DatabaseContext _context;
-        private readonly DbSet<T> _dbSet;
+        private readonly DbSet<T> _dbSet; 
 
         public BaseService(DatabaseContext context)
         {
